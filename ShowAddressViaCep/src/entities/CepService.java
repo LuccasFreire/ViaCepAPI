@@ -6,6 +6,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class CepService {
+	static String webService = "http://viacep.com.br/ws/";
+	static int Sucess = 200;
 	
 	
 }
