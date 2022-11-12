@@ -15,19 +15,21 @@ public class CepService {
 			URL url = new URL(apiRequest);
 			HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
 			
-			if (conexao.getResponseCode() != success) {
+			if (conexao.getResponseCode() != success) 
 				throw new RuntimeException("HTTP error code: " + conexao.getResponseCode());
 				
-				BufferedReader resposta = new BufferedReader(new InputStreamReader((conexao.getInputStream())));
-				//String jsonEmString = Util.converteJsonEmString(resposta);
+				BufferedReader response = new BufferedReader(new InputStreamReader((conexao.getInputStream())));
+				String jsonToString = Util.convertJsonToString(response);
 				Gson gson = new Gson();
-	            //Endereco endereco = gson.fromJson(jsonEmString, Endereco.class);
-				return Endereco;
-			}
+	            Address address = gson.fromJson(jsonToString, Address.class);
+	            return address;
+			
+			
 		}
 		catch (Exception e){
 			throw new Exception("ERRO: " + e);
 		}
+		
 	}
 	
 }

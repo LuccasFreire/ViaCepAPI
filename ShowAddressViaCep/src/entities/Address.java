@@ -8,10 +8,7 @@ public class Address {
 	private String uf;
 	
 	
-	@Override
-	public String toString() {
-		return "Address [Street = " + street + ", Neighbourhood = " + nbhd + ", City = " + city + ", UF = " + uf + "]";
-	}
+	
 
 	public String getStreet() {
 		return street;
@@ -28,6 +25,9 @@ public class Address {
 	public String getUf() {
 		return uf;
 	}
-	
+	@Override
+	public String toString() {
+		return "Address [Street = " + street + ", Neighbourhood = " + nbhd + ", City = " + city + ", UF = " + uf + "]";
+	}
 	
 }
