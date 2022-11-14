@@ -2,8 +2,8 @@ package entities;
 
 public class Address {
 	
-	private String street;
-	private String nbhd;
+	private String logradouro;
+	private String bairro;
 	private String city;
 	private String uf;
 	
@@ -11,11 +11,11 @@ public class Address {
 	
 
 	public String getStreet() {
-		return street;
+		return logradouro;
 	}
 	
 	public String getNbhd() {
-		return nbhd;
+		return bairro;
 	}
 	
 	public String getCity() {
@@ -27,7 +27,7 @@ public class Address {
 	}
 	@Override
 	public String toString() {
-		return "Address [Street = " + street + ", Neighbourhood = " + nbhd + ", City = " + city + ", UF = " + uf + "]";
+		return "Address [Street = " + logradouro + ", Neighbourhood = " + bairro + ", City = " + city + ", UF = "  +  uf + "]";
 	}
 	
 }

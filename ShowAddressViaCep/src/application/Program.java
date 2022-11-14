@@ -19,7 +19,7 @@ public class Program {
 
         System.out.println("Street: " + address.getStreet());
         System.out.println("Neighbourood: " + address.getNbhd());
-        System.out.println("Local: " + address.getUf());
+        System.out.println("UF: " + address.getUf());
 		
 		kb.close();
 	}
