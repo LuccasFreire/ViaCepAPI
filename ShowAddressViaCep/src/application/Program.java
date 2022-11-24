@@ -16,10 +16,9 @@ public class Program {
 		String cep = kb.nextLine();
 		
 		Address address = CepService.buscaEnderecoPelo(cep);
+		
+		System.out.println(address.toString());
 
-        System.out.println("Street: " + address.getStreet());
-        System.out.println("Neighbourood: " + address.getNbhd());
-        System.out.println("UF: " + address.getUf());
 		
 		kb.close();
 	}

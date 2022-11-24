@@ -4,7 +4,7 @@ public class Address {
 	
 	private String logradouro;
 	private String bairro;
-	private String city;
+	private String localidade;
 	private String uf;
 	
 	
@@ -19,7 +19,7 @@ public class Address {
 	}
 	
 	public String getCity() {
-		return city;
+		return localidade;
 	}
 	
 	public String getUf() {
@@ -27,7 +27,7 @@ public class Address {
 	}
 	@Override
 	public String toString() {
-		return "Address [Street = " + logradouro + ", Neighbourhood = " + bairro + ", City = " + city + ", UF = "  +  uf + "]";
+		return "Street = " + logradouro + "\nNeighbourhood = " + bairro + "\nCity = " + localidade + "\nUF = "  +  uf;
 	}
 	
 }
